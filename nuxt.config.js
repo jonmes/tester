@@ -159,8 +159,7 @@ export default defineNuxtConfig({
         autoprefixer: {},
       },
     },
-
-    transpile: ["@headlessui/vue", "@intlify/unplugin-vue-i18n", "@heroicons/vue", "@vueuse/motion"],
+    transpile: ["@headlessui/vue", "@intlify/unplugin-vue-i18n", "@heroicons/vue", "@vueuse/motion", "@vueuse/core"],
   },
   vite: {
     plugins: [
