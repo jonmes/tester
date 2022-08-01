@@ -1363,7 +1363,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vueuse/core@npm:8.9.4, @vueuse/core@npm:^8.9.1":
+"@vueuse/core@npm:8.9.4, @vueuse/core@npm:^8.1.2, @vueuse/core@npm:^8.9.1":
   version: 8.9.4
   resolution: "@vueuse/core@npm:8.9.4"
   dependencies:
@@ -1399,6 +1399,28 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@vueuse/motion@npm:^2.0.0-beta.12":
+  version: 2.0.0-beta.18
+  resolution: "@vueuse/motion@npm:2.0.0-beta.18"
+  dependencies:
+    "@vueuse/core": ^8.1.2
+    "@vueuse/shared": ^8.1.2
+    csstype: ^3.0.11
+    framesync: ^6.1.0
+    popmotion: ^11.0.3
+    style-value-types: ^5.1.0
+    vue-demi: "*"
+  peerDependencies:
+    "@nuxt/kit": "*"
+    "@vue/composition-api": ^1.4.1
+    vue: ^2.0.0 || >=3.0.0-rc.0
+  peerDependenciesMeta:
+    "@vue/composition-api":
+      optional: true
+  checksum: 8c79b3235d0f2706009617111fa830043dab558d513e741953557db67b22f5130498200d53eae6e47de2b0077d5ced75f6419ede660f942fd517bc4fb3bbb0a0
+  languageName: node
+  linkType: hard
+
 "@vueuse/nuxt@npm:^8.9.1":
   version: 8.9.4
   resolution: "@vueuse/nuxt@npm:8.9.4"
@@ -1412,7 +1434,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vueuse/shared@npm:8.9.4":
+"@vueuse/shared@npm:8.9.4, @vueuse/shared@npm:^8.1.2":
   version: 8.9.4
   resolution: "@vueuse/shared@npm:8.9.4"
   dependencies:
@@ -2355,6 +2377,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"csstype@npm:^3.0.11":
+  version: 3.1.0
+  resolution: "csstype@npm:3.1.0"
+  checksum: 644e986cefab86525f0b674a06889cfdbb1f117e5b7d1ce0fc55b0423ecc58807a1ea42ecc75c4f18999d14fc42d1d255f84662a45003a52bb5840e977eb2ffd
+  languageName: node
+  linkType: hard
+
 "cuint@npm:^0.2.2":
   version: 0.2.2
   resolution: "cuint@npm:0.2.2"
@@ -3200,6 +3229,24 @@ __metadata:
   languageName: node
   linkType: hard
 
+"framesync@npm:6.0.1":
+  version: 6.0.1
+  resolution: "framesync@npm:6.0.1"
+  dependencies:
+    tslib: ^2.1.0
+  checksum: a23ebe8f7e20a32c0b99c2f8175b6f07af3ec6316aad52a2316316a6d011d717af8d2175dcc2827031c59fabb30232ed3e19a720a373caba7f070e1eae436325
+  languageName: node
+  linkType: hard
+
+"framesync@npm:^6.1.0":
+  version: 6.1.0
+  resolution: "framesync@npm:6.1.0"
+  dependencies:
+    tslib: ^2.3.1
+  checksum: f3a933987a9235fd476b377b912c276aef474e07a93f682e6b6cec58a8301ae9ad860fbc712416a6812d39326ed18761aa58b4e9617024d2a08d86257b246f3c
+  languageName: node
+  linkType: hard
+
 "fresh@npm:0.5.2":
   version: 0.5.2
   resolution: "fresh@npm:0.5.2"
@@ -3474,13 +3521,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gsap@npm:^3.10.4":
-  version: 3.10.4
-  resolution: "gsap@npm:3.10.4"
-  checksum: 0c965c6e46a02198ba1662e338eb48123d65b49f41263223cfcd326abf734a5fbdeddcaf877ded610735408cd1e8e599da79ab954823daf7fe2f6b53d3807009
-  languageName: node
-  linkType: hard
-
 "gzip-size@npm:^7.0.0":
   version: 7.0.0
   resolution: "gzip-size@npm:7.0.0"
@@ -3543,6 +3583,13 @@ __metadata:
   version: 2.0.0
   resolution: "hash-sum@npm:2.0.0"
   checksum: efeeacf09ecbd467202865403c3a1991fa15d4f4903c1148ecbe13223fdbf9ec6d7dc661e17e5ce6e776cd70d67b6ee4c82e0171318962435be45c1155175f3f
+  languageName: node
+  linkType: hard
+
+"hey-listen@npm:^1.0.8":
+  version: 1.0.8
+  resolution: "hey-listen@npm:1.0.8"
+  checksum: 6bad60b367688f5348e25e7ca3276a74b59ac5a09b0455e6ff8ab7d4a9e38cd2116c708a7dcd8a954d27253ce1d8717ec891d175723ea739885b828cf44e4072
   languageName: node
   linkType: hard
 
@@ -5155,6 +5202,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"popmotion@npm:^11.0.3":
+  version: 11.0.3
+  resolution: "popmotion@npm:11.0.3"
+  dependencies:
+    framesync: 6.0.1
+    hey-listen: ^1.0.8
+    style-value-types: 5.0.0
+    tslib: ^2.1.0
+  checksum: 9fe7d03b4ec0e85bfb9dadc23b745147bfe42e16f466ba06e6327197d0e38b72015afc2f918a8051dedc3680310417f346ffdc463be6518e2e92e98f48e30268
+  languageName: node
+  linkType: hard
+
 "postcss-calc@npm:^8.2.3":
   version: 8.2.4
   resolution: "postcss-calc@npm:8.2.4"
@@ -5932,9 +5991,9 @@ __metadata:
     "@tailwindcss/line-clamp": ^0.4.0
     "@vue-leaflet/vue-leaflet": ^0.6.1
     "@vueuse/core": ^8.9.1
+    "@vueuse/motion": ^2.0.0-beta.12
     "@vueuse/nuxt": ^8.9.1
     autoprefixer: latest
-    gsap: ^3.10.4
     leaflet: ^1.8.0
     nuxt: 3.0.0-rc.4
     petite-vue-i18n: ^9.2.0-beta.39
@@ -6330,6 +6389,26 @@ __metadata:
   languageName: node
   linkType: hard
 
+"style-value-types@npm:5.0.0":
+  version: 5.0.0
+  resolution: "style-value-types@npm:5.0.0"
+  dependencies:
+    hey-listen: ^1.0.8
+    tslib: ^2.1.0
+  checksum: 16d198302cd102edf9dba94e7752a2364c93b1eaa5cc7c32b42b28eef4af4ccb5149a3f16bc2a256adc02616a2404f4612bd15f3081c1e8ca06132cae78be6c0
+  languageName: node
+  linkType: hard
+
+"style-value-types@npm:^5.1.0":
+  version: 5.1.0
+  resolution: "style-value-types@npm:5.1.0"
+  dependencies:
+    hey-listen: ^1.0.8
+    tslib: ^2.3.1
+  checksum: 25af60d2ea8e2c64a405f377e3208fe3cad672a115417748d72c3d515809655d8468b3ee2dbdef19bade4aa0dc4a07086c63faa2b10ef39673a2ab01a35b9cfa
+  languageName: node
+  linkType: hard
+
 "stylehacks@npm:^5.1.0":
   version: 5.1.0
   resolution: "stylehacks@npm:5.1.0"
@@ -6562,7 +6641,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tslib@npm:^2.1.0":
+"tslib@npm:^2.1.0, tslib@npm:^2.3.1":
   version: 2.4.0
   resolution: "tslib@npm:2.4.0"
   checksum: 8c4aa6a3c5a754bf76aefc38026134180c053b7bd2f81338cb5e5ebf96fefa0f417bff221592bf801077f5bf990562f6264fecbc42cd3309b33872cb6fc3b113
