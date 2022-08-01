@@ -149,9 +149,20 @@ export default defineNuxtConfig({
       // ],
     },
   },
-  modules: ["@nuxtjs/tailwindcss", "@nuxtjs/color-mode", "@vueuse/nuxt"],
+  modules: ["@nuxtjs/color-mode", "@vueuse/nuxt"],
   css: ["@/assets/css/main.css"],
+  nitro: {
+    preset: 'node-server'
+  },
   build: {
+    postcss: {
+      postcssOptions: require("./postcss.config.js"),
+      plugins: {
+        tailwindcss: {},
+        autoprefixer: {},
+      },
+    },
+
     transpile: ["@headlessui/vue", "@intlify/unplugin-vue-i18n", "@heroicons/vue"],
   },
   vite: {
