@@ -24,7 +24,6 @@
     "@tailwindcss/line-clamp": "^0.4.0",
     "@vue-leaflet/vue-leaflet": "^0.6.1",
     "@vueuse/core": "^8.9.1",
-    "@vueuse/motion": "^2.0.0-beta.12",
     "@vueuse/nuxt": "^8.9.1",
     "gsap": "^3.10.4",
     "leaflet": "^1.8.0",
